@@ -59,7 +59,8 @@
 
             /* nav bar starts */
             .container-fluid {
-                background-color: #a37272;
+                background-color: #8c5c5c;
+                box-shadow: 0 4px 2px -2px rgb(61, 60, 60);
                 position: fixed;
                 /* max-width: fit-content;
                 width: auto; */
@@ -69,7 +70,7 @@
 
             .container-fluid #logo {
                 height: 19%;
-                width: 19%;
+                width: 15%;
             }
             .navbar{
                 width: auto;
@@ -77,7 +78,7 @@
             .navbar-collapse {
                 /* background-color: rgb(192, 166, 148); */
                 padding: auto 10% auto 10%;
-                margin-left: 35%;
+                margin-left: 28%;
                 /* margin-right: 20%; */
                 /* width: max-content; */
 
@@ -104,13 +105,16 @@
             /* more-home starts */
             .more-home {
                 background-color: #3E3232;
-                height: 95vh;
-                width: auto;
+                height: 107vh;
+                width: 100%;
             }
 
             .more-home .row {
                 background-color: #3E3232;
-                height: 100vh;
+                display: flex;
+                flex-wrap: wrap;
+                height: auto;
+                width: auto;
                 /* width: 100v; */
                 /* font-family: "Playwrite CZ", cursive; ; */
                 color: rgb(206, 182, 139);
@@ -122,7 +126,8 @@
             }
 
             #text-home-more {
-                margin-top: 10%;
+                margin-top: 7%;
+                margin-bottom: 10%;
                 /* margin-bottom: 10%; */
             }
 
@@ -194,9 +199,9 @@
         </style>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img id="logo" src="logo1.jpeg" alt="logo"> ReStoCAfe</a>
+            <a class="navbar-brand" href="#"><img id="logo" src="logo1.jpeg" alt="logo"> ReStoCAfé</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -237,15 +242,16 @@
                 </div>
                 <div class="col" id="text-home-more">
 
-                    <h1><b>INDULGE A LITTLE. <br>
+                    <p><h1><b>INDULGE A LITTLE. <br>
                         OK, A LOT. </h1></b><br><br>
-                    In our house, everything is made by <i class="fa-solid fa-heart"></i> <br> The biscuits, the gravy,
+                    In our kitchen, everything is made by <i class="fa-solid fa-heart"></i> <br> The biscuits, the gravy,
                     the jam. Heck, even the pickles
                     and local honey butter are homemade. Turns out, the more you make things from scratch, the more
                     generous the portions get. Maybe it’s a Southern thing. Maybe it’s a Denver thing. Maybe it’s a
                     biscuits-the-size-of-basketballs thing. But one thing’s for sure: you’re gonna wanna grab at least 4
-                    napkins <i class="fa-solid fa-face-laugh-wink"></i>
+                    napkins <i class="fa-solid fa-face-laugh-wink"></i> </p>
 
+                   
                 </div>
             </div>
         </div>
@@ -254,7 +260,7 @@
 
     <!-- timings -->
     <div id="time">
-        SERVED MON-FRI OPEN TIL 2PM AND SAT-SUN TIL 3PM
+        SERVED MON-FRI OPEN TILL 2PM AND SAT-SUN TILL 3PM
     </div>
 
     <!-- prod-adv -->
