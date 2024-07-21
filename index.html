@@ -60,7 +60,8 @@
             /* nav bar starts */
             .container-fluid {
                 background-color: #110101;
-                box-shadow: 0 4px 2px -2px rgb(61, 60, 60);
+                /* box-shadow: 0 4px 2px -2px rgb(61, 60, 60); */
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
                 position: fixed;
                 /* max-width: fit-content;
                 width: auto; */
@@ -179,9 +180,20 @@
                 text-align: justify;
                 padding-top: 4vh;
                 font-weight: 900;
-                background-color: rgba(14, 13, 13, 0.8);
-                box-shadow: 0 3px 2px 1px rgb(14, 13, 13);
+                background-color: rgba(14, 13, 13, 0.9);
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+                margin-bottom: 2%;
             }
+
+            .lift-on-hover {
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+
+            .lift-on-hover:hover {
+                transform: translate(-4px, -4px) scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.9);
+}
+
             /* prod-adv ends */
 
             /* footer starts*/
@@ -221,7 +233,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="product.html">Products <i class="fa-solid fa-beer-mug-empty"></i></a>
+                        <a class="nav-link" href="product.html">Products <i class="fa-solid fa-utensils"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact <i class="fa-solid fa-user"></i></a>
@@ -235,8 +247,13 @@
 <body>
 
     <!-- hero img -->
-    <img src="https://media.istockphoto.com/id/470046828/photo/latte-art-on-coffee-bean-background.jpg?s=612x612&w=0&k=20&c=Rdggc-uEBC_Eq8pJwiagg847m4V49R8P-E_w03ohZ8Y="
-        class="img-fluid" alt="hero-img">
+        <div class="position-relative">
+            <img src="https://media.istockphoto.com/id/470046828/photo/latte-art-on-coffee-bean-background.jpg?s=612x612&w=0&k=20&c=Rdggc-uEBC_Eq8pJwiagg847m4V49R8P-E_w03ohZ8Y="
+            class="img-fluid" alt="hero-img">
+            <div class="position-absolute top-20 start-40  translate-middle" style="background-color: rgba(0, 0, 0, 0.9); padding: 3px; margin-left: 45vh;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
+            <h1 style="color: #a79797; font-family: WindSong, cursive; font-weight: 700; font-size:3vb;" >Hunting for the Perfect Brew? Look No Further <i class="fa-solid fa-hourglass-end"></i></h1>
+            </div>
+        </div>
 
 
     <!-- more-home -->
@@ -244,7 +261,7 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col">
-                    <img id="img-more-home" src="logo.jpeg" alt="logo-img">
+                    <img class="lift-on-hover" id="img-more-home" src="logo.jpeg" alt="logo-img">
                 </div>
                 <div class="col" id="text-home-more">
 
@@ -278,7 +295,7 @@
             <br><br><br><br>
 
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 lift-on-hover">
                     <a href="product.html"><img src="https://cdn.pixabay.com/photo/2016/04/26/16/58/coffe-1354786_960_720.jpg" class="card-img-top" alt="Product 1"></a>
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="product.html">HOT CLASSICS</a></h5>
@@ -286,7 +303,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 lift-on-hover">
                     <a href="product.html"><img src="https://media.istockphoto.com/id/1848450207/photo/pour-the-beer-into-the-glass.jpg?s=612x612&w=0&k=20&c=sG54DiM-vI19P723xS1BMY4QtFfQOFRwtsYwECTPOeY=" class="card-img-top" alt="Product 2"></a>
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="product.html">ALL-TIME CHILLERS</a></h5>
@@ -294,7 +311,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 lift-on-hover">
                     <a href="product.html"><img src="https://cdn.pixabay.com/photo/2021/05/24/13/15/cake-6279252_640.jpg" class="card-img-top" alt="Product 3"></a>
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="product.html">SWEET TOOTH</a></h5>
@@ -302,7 +319,7 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 lift-on-hover">
                     <a href="product.html"><img src="https://cdn.pixabay.com/photo/2019/12/15/17/06/chocolate-4697591_640.jpg" class="card-img-top" alt="Product 4"></a>
                     <div class="card-body text-center">
                         <h5 class="card-title"><a href="product.html">NUTRI BYTES</a></h5>
@@ -322,9 +339,9 @@
                 <p>Email: info@restocafe.com</p>
                 <p>Phone: 123-456-7890</p>
             </div>
-            <div class="col text-center">
+            <div class="col text-center ">
                 <h4>Follow Us</h4>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-facebook-f "></i></a>
                 <a href="#"><i class="fab fa-x-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>

@@ -50,7 +50,8 @@
             }
             .container-fluid {
                 background-color: #110101;
-                box-shadow: 0 4px 2px -2px rgb(61, 60, 60);
+                /* box-shadow: 0 4px 2px -2px rgb(61, 60, 60); */
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);
                 font-family: "Architects Daughter", cursive;
                 position: fixed;
                 /* max-width: fit-content;
@@ -68,16 +69,19 @@
                 width: auto;
             }
             .navbar-collapse {
-                /* background-color: rgb(192, 166, 148); */
-                padding: auto 10% auto 10%;
-                margin-left: 22%;
+                /* background-color:red; */
+                padding: auto 20% auto 20%;
+                /* margin-left: 2%; */
                 /* margin-right: 20%; */
+                /* display: flex; */
+                /* justify-content: space-between; */
                 /* width: max-content; */
 
             }
 
-            .nav-item {
-                padding-right: 20px;
+            .nav-item .nav-link{
+                padding-right: 5px;
+                /* justify-content: space-between; */
                 font-size: large;
                 /* background-color: red; */
             }
@@ -152,6 +156,16 @@
                 padding: 0.5rem 1rem;
             }
 
+            .lift-on-hover {
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+
+            .lift-on-hover:hover {
+                transform: translate(-3px, -3px) scale(1.02);
+                /* box-shadow: 0 0px 10px rgba(0, 0, 0, 0.9); */
+                box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+            }
+
 /*---------------------------------------------------------------------------*/
             #hot-classics {
                 /* background-color: #f8d7da; */
@@ -202,10 +216,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex" style="margin-right: 2%;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 300px;">
+                    <button class="btn btn-outline-warning" type="submit">Search</button>
+                </form>
+
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link "  href="index.html">Home <i
-                                class="fa-solid fa-house"></i></a>
+                        <a class="nav-link" href="index.html">Home <i class="fa-solid fa-house"></i></a>
                     </li>
 
                     <li class="nav-item">
@@ -227,7 +245,7 @@
         <div class="position-relative">
             <img src="https://images.squarespace-cdn.com/content/v1/6530997c1362a1794ebd2844/0cb88373-3f98-4301-904d-e6f6c96296f9/AC_Website_Draft+Pour.jpg?format=1500w"
             class="img-fluid" alt="hero-img">
-            <div class="position-absolute top-50 start-50 translate-middle" style="background-color: rgba(0, 0, 0, 0.9); padding: 10px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">
+            <div class="position-absolute top-50 start-50 translate-middle" style="background-color: rgba(0, 0, 0, 0.9); padding: 10px; box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.4);">
             <h1 style="color: #a79797; font-family: WindSong, cursive; font-weight: 900; font-style: normal; font-size:12vb;" >Our Delicacies</h1>
             </div>
         </div>
@@ -239,8 +257,8 @@
                 <h2 class="text-left">HOT CLASSICS</h2>
                 <div class="row">
                     <!-- Example Item Card -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2016/11/29/02/10/caffeine-1866758_1280.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Classic Cappuccino</h5>
@@ -259,8 +277,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2017/08/10/05/54/cafe-2618801_1280.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Café Latte</h5>
@@ -278,8 +296,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2015/10/07/05/47/chai-975685_640.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Masala Chai</h5>
@@ -310,8 +328,8 @@
                 <div class="row">
                     <!-- Repeat item cards as shown in Hot Classics section -->
                     <!-- Example Item Card -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2014/08/29/14/58/coffee-431121_1280.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Iced Caramel Macchiato</h5>
@@ -330,7 +348,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2018/05/07/11/22/mango-3380631_640.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Mango Smoothie</h5>
@@ -348,8 +366,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2021/09/06/01/13/coffee-6600644_640.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Cold Brew Coffee</h5>
@@ -379,8 +397,8 @@
                 <div class="row">
                     <!-- Repeat item cards as shown in Hot Classics section -->
                     <!-- Example Item Card -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2017/10/19/13/25/cheesecake-2867614_640.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Cheesecake</h5>
@@ -398,8 +416,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2021/01/26/14/45/chocolate-mousse-5951768_1280.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Chocolate Mousse with Bacon</h5>
@@ -417,8 +435,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2015/03/29/16/42/cupcakes-697445_640.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Red Velvet Cupcake</h5>
@@ -448,8 +466,8 @@
                 <div class="row">
                     <!-- Repeat item cards as shown in Hot Classics section -->
                     <!-- Example Item Card -->
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2022/02/12/21/22/toast-7009956_640.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Avocado Toast</h5>
@@ -467,8 +485,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                    <div class="col-md-4 ">
+                        <div class="card mb-4 shadow-sm lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2018/04/05/16/49/yoghurt-3293359_640.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Greek Yogurt Parfait</h5>
@@ -487,7 +505,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
+                        <div class="card mb-4 shadow-sm  lift-on-hover">
                             <img src="https://cdn.pixabay.com/photo/2020/02/01/06/13/vegan-4809593_640.jpg" class="card-img-top" alt="Item Image">
                             <div class="card-body">
                                 <h5 class="card-title">Chicken Caesar Salad</h5>

@@ -45,7 +45,7 @@
             background-size: contain;
             margin: 0;
             padding: 0;
-            width: 100%;
+            width: auto;
 
             
 
@@ -56,7 +56,8 @@
             }
             .container-fluid {
                 background-color: #110101;
-                box-shadow: 0 4px 2px -2px rgb(61, 60, 60);
+                /* box-shadow: 0 4px 2px -2px rgb(61, 60, 60); */
+                box-shadow: 0 0 10px 5px rgba(32, 32, 32, 1);
                 font-family: "Architects Daughter", cursive;
                 position: fixed;
                 /* max-width: fit-content;
@@ -133,6 +134,7 @@
 
         .container  .col-md-6{
             background-color: rgba(0,0,0,0.7); 
+            box-shadow: 0 0 10px 5px rgba(57, 57, 57, 0.5);
             color: rgb(229, 201, 201);
             padding-bottom: 10%;
             margin-top: 4%;
@@ -155,6 +157,7 @@
 
         #options {
             background-color: rgb(0,0,0); 
+            box-shadow: 0 0 10px 5px rgba(36, 36, 36, 0.5);
             padding: 1%;
             padding-top:2%;
 
@@ -164,12 +167,20 @@
             color: rgb(229, 201, 201);
             /* font-family: Arial, Helvetica, sans-serif; */
         }
+        .lift-on-hover {
+                transition: transform 0.2s, box-shadow 0.2s;
+            }
+
+            .lift-on-hover:hover {
+                transform: translate(-4px, -4px) scale(1.05);
+                box-shadow: 0 8px 16px rgba(42, 42, 42, 0.9);
+            }
 /*___________________________________________________________________________*/
             .foot {
                 position: relative;
                 width: 100%;
                 padding: 2%;
-                background-color: #110000;
+                background-color: #080000;
                 color: #a79797;
                 font-size: small;
                 text-align: center;
@@ -221,7 +232,7 @@
 <body>
     <div class="container mt-5 pt-5">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 lift-on-hover">
                 <h2>Contact Us</h2>
                 <form>
                     <div class="form-group">
@@ -243,7 +254,7 @@
         <!-- New Sections for Order History, Bill, and Latest Transactions -->
         <div class="row mt-5" id="options" >
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 lift-on-hover">
                     <div class="card-body">
                         <h5 class="card-title">Order History</h5>
                         <p class="card-text">View your past orders and details.</p><br>
@@ -252,7 +263,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 lift-on-hover">
                     <div class="card-body">
                         <h5 class="card-title">Bill</h5>
                         <p class="card-text">Check your current bill and payment status.</p>
@@ -261,7 +272,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 lift-on-hover">
                     <div class="card-body">
                         <h5 class="card-title">Latest Transactions</h5>
                         <p class="card-text">See your recent transactions and details.</p><br>
